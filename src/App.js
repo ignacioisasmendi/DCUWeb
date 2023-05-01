@@ -1,10 +1,13 @@
 import './App.css';
-import Navbar from './components/NavBar';
+import NavBar from './components/NavBar';
+import Redirections from './components/Redirections';
 
 function App() {
   return (
     <>
-      <Navbar/>
+      <NavBar/>
+      <Redirections/>
+      
     </>
   );
 }

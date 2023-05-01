@@ -1,14 +1,12 @@
 import React, {useState} from 'react';
 import styled from 'styled-components';
 import MenuButton from './MenuButton';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faHouse} from '@fortawesome/free-solid-svg-icons'
-import {faUsers} from '@fortawesome/free-solid-svg-icons'
-import {faWindowRestore} from '@fortawesome/free-solid-svg-icons'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faHouse} from '@fortawesome/free-solid-svg-icons';
+import {faUsers} from '@fortawesome/free-solid-svg-icons';
+import {faWindowRestore} from '@fortawesome/free-solid-svg-icons';
 
-
-
-function Navbar(){
+function NavBar(){
 
   const[clicked, setClicked] = useState(false);
   const handleClick = () => {
@@ -18,14 +16,14 @@ function Navbar(){
   return(
     <>
       <NavContainer>
-        <a className='logo-img-container' href='index.html'>
-          <img src={require('../imagen/DCUlogo.png')}/>
+        <a className='logo-img-container' href='/'>
+          <img src={require('../images/DCUlogo.png')}/>
           <h2><span>Don't Call Us</span></h2>
         </a>
         <div className={`links ${clicked ? 'active' : ''}`}>
-          <a className='link' onClick={handleClick} href='index.html'><FontAwesomeIcon className='icons' icon={faHouse} /> Inicio</a>
-          <a className='link' onClick={handleClick} href='https://www.youtube.com/watch?v=KQ_xtBn4r94'><FontAwesomeIcon className='icons' icon={faWindowRestore} /> Demo</a>
-          <a onClick={handleClick} href='https://www.youtube.com/watch?v=kJ1Fv23KxP0&ab_channel=IndioSolariOficial'><FontAwesomeIcon className='icons' icon={faUsers} /> Sobre Nosotros</a>
+          <a className='link' onClick={handleClick} href='/'><FontAwesomeIcon className='icons' icon={faHouse} /> Inicio</a>
+          <a className='link' onClick={handleClick} href='/demo'><FontAwesomeIcon className='icons' icon={faWindowRestore} /> Demo</a>
+          <a onClick={handleClick} href='/about'><FontAwesomeIcon className='icons' icon={faUsers} /> Sobre Nosotros</a>
         </div>
         <div className='button-container'>
           <MenuButton clicked={clicked} handleClick={handleClick}/>
@@ -168,4 +166,4 @@ const BgDiv = styled.div`
   }
 `
 
-export default Navbar;
+export default NavBar;
