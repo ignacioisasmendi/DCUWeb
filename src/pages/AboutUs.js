@@ -3,7 +3,7 @@ import Slider from '../components/Slider';
 import inaki from '../images/inaki.png';
 import leon from '../images/Leon.png';
 import logo from '../images/DCUlogo.png';
-import './aboutus.module.css'
+import './AboutUs.css'
 
 const AboutUs = () => {
 

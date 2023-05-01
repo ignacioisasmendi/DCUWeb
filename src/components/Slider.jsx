@@ -1,5 +1,5 @@
 import React from 'react'
-import './Slider.module.css'
+import './Slider.css'
 
 
 function Slider({imagenes}) {
