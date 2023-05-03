@@ -18,7 +18,7 @@ function NavBar(){
       <NavContainer>
         <a className='logo-img-container' href='/'>
           <img src={require('../images/DCUlogo.png')}/>
-          <h2><span>Don't Call Us</span></h2>
+          <h3><span>Don't Call Us</span></h3>
         </a>
         <div className={`links ${clicked ? 'active' : ''}`}>
           <a className='link' onClick={handleClick} href='/'><FontAwesomeIcon className='icons' icon={faHouse} /> Inicio</a>
@@ -35,7 +35,7 @@ function NavBar(){
 }
 
 const NavContainer = styled.nav`
-  h2{
+  h3{
     color: #000;
     font-weight: 400;
     position: relative;

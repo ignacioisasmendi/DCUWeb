@@ -2,5 +2,94 @@
   margin-left: auto;
 }
 .slider{
-  margin-left: 100px;
+  margin-left: 600px;
 }
+
+.Inaki{
+  border-radius: 50%;
+  max-width: 80%;
+	object-fit: cover;
+  display: flex;
+}
+
+.Leon{
+  border-radius: 50%;
+  max-width: 80%;
+	object-fit: cover;
+  display: flex;
+}
+
+.Plaga{
+  border-radius: 50%;
+  max-width: 80%;
+	object-fit: cover;
+  display: flex;
+}
+
+.Nacho{
+  border-radius: 50%;
+  max-width: 80%;
+	object-fit: cover;
+  display: flex;
+}
+
+.Labestia{
+  border-radius: 50%;
+  max-width: 80%;
+	object-fit: cover;
+  display: flex;
+}
+
+.Franco{
+  border-color: black;
+  border-radius: 50%; 
+  max-width:80%;
+	object-fit: cover;
+  display: flex;
+}
+
+.Equipo{
+  align-content: auto;
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flex;
+  margin-top: 5%;
+  max-width: 100%;
+}
+
+.Equipo2{
+  align-content: auto;
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flex;
+  margin-top: 5%;
+  max-width: 100%;
+}
+
+.titulo{
+  margin-left: 30px;
+}
+
+.texto{
+  margin-left: 45px;
+  margin-right: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.contenedor{
+  display: flex;
+}
+
+.img{
+  text-align: left;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.AboutUs{
+  background-color: rgba(243, 160, 66, 0.368);
+}
+

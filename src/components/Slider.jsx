@@ -1,5 +1,5 @@
 import React from 'react'
-import './Slider.css'
+import estilos from './Slider.css'
 
 
 function Slider({imagenes}) {
@@ -18,14 +18,15 @@ function Slider({imagenes}) {
     console.log(' SiguienteImagen ', imagenActual )
     console.log(' PPPanteriorImagen ', imagenActual )
     console.log(cantidad);
+
+    //setTimeout(siguienteImagen, 3000);
   return (
     <div className='container'>
        <button className='botonAnt' onClick={anteriorImagen}>ᐊ</button>
        {imagenes.map((imagen, index) => {
         return (
-        <div>{imagenActual === index &&(
-            <img key={index} src={imagen} alt="imagen"/>
-        )}
+        <div className={imagenActual === index ? `${estilos.slide} ${estilos.active}` : estilos.slide}>
+          {imagenActual === index &&( <img className='foto' key={index} src={imagen} alt="imagen"/> )}
         </div>
         );
        })}
