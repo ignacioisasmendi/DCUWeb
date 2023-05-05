@@ -2,6 +2,7 @@ import NavBar from './components/NavBar';
 import React from 'react';
 import './App.css';
 import Redirections from './components/Redirections';
+import Footer from './components/Footer';
 
 
 
@@ -11,6 +12,7 @@ function App() {
     <>
       <NavBar/>
       <Redirections/>
+      <Footer/>
     </>
   );
 }

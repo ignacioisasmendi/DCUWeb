@@ -1,0 +1,127 @@
+.section__padding{
+  padding: 2rem 2rem;
+}
+
+.footer{
+  margin-top: 2rem;
+  background-color: #2d2d32;
+}
+
+.sb__footer{
+  display: flex;
+  flex-direction: column;
+}
+
+.sb__footer-links{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 53%;
+  text-align: left;
+  position: relative;
+  left: 30%;
+  top: -120px;
+  margin-left: 10%;
+  height: 5rem;
+
+  @media(max-width: 710px){
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+    left: -14%;
+    top: 20%;
+    margin-top: 10%;
+    height: 15rem;
+  }
+  @media(max-width: 450px){
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+    left: -14%;
+    top: 20%;
+    margin-top: 10%;
+    height: 18rem;
+  }
+}
+
+.sb__footer-links_div{
+  width: 45px;
+  margin: 0rem;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  color: #fff;
+}
+
+.logo-exactas{
+  display: flex;
+  position: relative;
+  width: 212px;
+  height: 62px;
+}
+
+.logo-exactas img{
+  display: flex;
+  width: 212px;
+  height: 62px;
+}
+
+.logo-unicen{
+  display: flex;
+  position: relative;
+  width: 212px;
+  height: 62px;
+  padding-top: 30px;
+}
+
+.logo-unicen img{
+  display: flex;
+  width: 212px;
+  height: 62px;
+}
+
+a{
+  color: #fff;
+  text-decoration: none;
+  width: 3rem;
+}
+
+.socialmedia{
+  display: flex;
+  flex-direction: column;
+}
+
+.sb__footer-links_div h4{
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 5%;
+  margin-bottom: 0.5rem;
+}
+
+hr{
+  color: #fff !important;
+  width: 100%;
+}
+
+.sb__footer-copyright{
+  font-size: 13px;
+  line-height: 15px;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+}
+
+@media screen and (max-width: 550px) {
+  .sb__footer-links div{
+    margin: 1rem 0;
+  }
+}

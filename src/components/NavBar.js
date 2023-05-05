@@ -6,6 +6,7 @@ import {faHouse} from '@fortawesome/free-solid-svg-icons';
 import {faUsers} from '@fortawesome/free-solid-svg-icons';
 import {faWindowRestore} from '@fortawesome/free-solid-svg-icons';
 
+
 function NavBar(){
 
   const[clicked, setClicked] = useState(false);
@@ -18,7 +19,7 @@ function NavBar(){
       <NavContainer>
         <a className='logo-img-container' href='/'>
           <img src={require('../images/DCUlogo.png')}/>
-          <h3><span>Don't Call Us</span></h3>
+          <h2><span>Don't Call Us</span></h2>
         </a>
         <div className={`links ${clicked ? 'active' : ''}`}>
           <a className='link' onClick={handleClick} href='/'><FontAwesomeIcon className='icons' icon={faHouse} /> Inicio</a>
@@ -28,44 +29,52 @@ function NavBar(){
         <div className='button-container'>
           <MenuButton clicked={clicked} handleClick={handleClick}/>
         </div>
-        <BgDiv className={`initial ${clicked ? 'active' : ''}`}></BgDiv>
       </NavContainer>
+      <BgDiv className={`initial ${clicked ? 'active' : ''}`}></BgDiv>
     </>
   )
 }
 
 const NavContainer = styled.nav`
-  h3{
+
+  h2{
     color: #000;
     font-weight: 400;
-    position: relative;
-    top: -75px;
+    font-size: inherit;
+    font-size: 28px;
+    position: absolute;
+    top: 25px;
     left: 90px;
     height: 20px;
+    width: 175px;
     span{
       font-weight: bold;
     }
   }
 
   .logo-img-container{
+    position: relative;
     height: 80px;
     width: 145px;
+    z-index: 2;
   }
 
   img{
-    width: 80px;
-    height: 80px;
-    top: 5px;
-
-    position: relative;
+    width: 75px;
+    height: 75px;
+    top: 3px;
+    position: absolute;
   }
 
+  position: relative;
+  z-index: 3;
   padding: .4rem;
   height 75px;
   background-color: #c60;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  
   a{
     color: #fff;
     text-decoration: none;
@@ -81,6 +90,7 @@ const NavContainer = styled.nav`
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    z-index: 2;
     transition: all .5s ease;
     a{
       color: #fff;
@@ -106,15 +116,13 @@ const NavContainer = styled.nav`
   
   }
 
- 
-
   .links.active{
     width: fit-content;
     display: block;
     position: absolute;
     margin-left: auto;
     margin-right: auto;
-    top: 30%;
+    top: 250%;
     left: 0;
     right: 0;
     text-align: center;
@@ -124,6 +132,7 @@ const NavContainer = styled.nav`
       color: #fff;
       margin-left: 20px;
       margin-top: 10px;
+      width: fit-content;
     }
     a:hover{
       color: #4ff;
@@ -145,6 +154,7 @@ const NavContainer = styled.nav`
     @media(min-width: 768px){
       display: none;
     }
+    z-index: 2;
   }
 `
 
@@ -155,7 +165,7 @@ const BgDiv = styled.div`
   left: -1000px;
   width: 100%;
   height: 100%;
-  z-index: -1;
+  z-index: 1;
   transition: all .6s ease;
   &.active{
     border-radius: 0 0 80% 0;
