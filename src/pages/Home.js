@@ -28,11 +28,38 @@ const Home = () => {
             y esta pensado para que a medida que se avanza en el curso se avance de aula, y al finalizar la tematica a aprender se vuelva otra vez a la primer aula
             siendo asi un curso progresivo y que intenta captar la atencion del aprendiz para descubrir el nuevo contenido. 
           </h2>
-          <div className='slider'>
-            <Slider imagenes={mockImagenes} />
+          <div className='carrusel'>
+          <div id="carouselExampleControls" className="carousel slide"  data-bs-ride="carousel">
+              <div className="carousel-inner">
+                <div className="carousel-item active">
+                  <img src={require('../images/Inaki.png')} className="d-block w-100" alt="..."/>
+                </div>
+                <div className="carousel-item">
+                  <img src={require('../images/Leon.png')} className="d-block w-100" alt="..."/>
+                </div>
+                <div className="carousel-item">
+                  <img src={require('../images/Nacho.png')} className="d-block w-100" alt="..."/>
+                </div>
+              </div>
+              <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span className="visually-hidden">Previous</span>
+              </button>
+              <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                <span className="visually-hidden">Next</span>
+              </button>
+            </div>
           </div>
     </>
   )
 }
 
 export default Home;
+ /*
+ <div className='slider'
+    <Slider imagenes={mockImagenes} />
+  </div>
+          */
+
+  

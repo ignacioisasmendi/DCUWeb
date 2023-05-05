@@ -21,9 +21,9 @@ const AboutUs = () => {
           
           <div className='contenedor'>
             <div className='img'>
-            <img src={require('../images/Inaki.png')} className='Inaki'/>
-            <h3> Inaki Urdangarin</h3>
-            <h4>Lider de equipo</h4>
+              <img src={require('../images/Inaki.png')} className='Inaki'/>
+              <h3> Inaki Urdangarin</h3>
+              <h4>Lider de equipo</h4>
             </div>
           </div>
 

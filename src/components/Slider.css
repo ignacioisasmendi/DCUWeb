@@ -14,7 +14,7 @@
 	transition: opacity 0.75s ease-in-out;
 }
 
-.active {
+.slide:hover{
 	opacity: 1;
 }
 

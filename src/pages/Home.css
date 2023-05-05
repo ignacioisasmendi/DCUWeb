@@ -1,7 +1,6 @@
-.slider{
-   
-    
-}
+
+
+
 
 h2{
     margin-right: 50%;
@@ -11,4 +10,14 @@ h2{
 
 h1{
     margin-left: 5%;
+}
+
+.carousel.slide{
+    opacity: 1;
+    width: 40%;
+    position: relative;
+    right: -55%;
+    width: 30%;
+    margin-top: -300px;
+
 }

@@ -19,7 +19,7 @@ function Slider({imagenes}) {
     console.log(' PPPanteriorImagen ', imagenActual )
     console.log(cantidad);
 
-    //setTimeout(siguienteImagen, 3000);
+    setTimeout(siguienteImagen, 3000);
   return (
     <div className='container'>
        <button className='botonAnt' onClick={anteriorImagen}>ᐊ</button>
